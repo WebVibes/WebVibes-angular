@@ -115,14 +115,29 @@
   display: flex;
   align-items: center;
 
-  height: 400px;
+  height: 600px;
   .card {
     flex: 0 0 auto;
-    width: auto;
-    height: 100%;
+    width: 80%;
+    height: auto;
     scroll-snap-align: center;
-    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
+  }
+}
+
+@media screen and (max-width: 8000px) {
+  .scrolling-wrapper-flexbox {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scrolling-wrapper-flexbox {
+    height: 400px;
   }
 }
 
