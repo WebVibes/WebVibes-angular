@@ -7,11 +7,13 @@
 
 .hero-text-container {
   height: 100%;
+  padding: 24px;
   margin: auto;
 }
 
 .hero-image {
   width: 100%;
+  padding: 12px 0 12px 0;
 }
 
 #services {
@@ -129,7 +131,16 @@
   }
 }
 
-@media screen and (max-width: 8000px) {
+@media screen and (max-width: 1000px) {
+  .hero-text-container {
+    padding: 12px;
+  }
+  .hero-image {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .scrolling-wrapper-flexbox {
     height: 500px;
   }
